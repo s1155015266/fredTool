@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>PvM Config Setting</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="theme.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="ejs_0.9_alpha_1_production.js"></script>
+		<script src=componentDef.js></script>
+		<script src=component_config.js></script>
+		<link rel="stylesheet" type="text/css" href="theme.css">
+		<script>
+			window.onload = function(){
+				showPluginList();
+			}
+		</script>
+	</head>
+	<body>
+<!-- 		<input type="text" name="city" list="citynames">
+		<datalist id="citynames">
+		  <option value="Boston">
+		  <option value="Cambridge">
+		</datalist> -->
+
+		<div id="ejsTest">
+
+		</div>
+
+		<div class="container"><h1> Input Config for PvM </h1></div>
+			<div id="exTab1" class="container">	
+				<ul  class="nav nav-pills">
+					<li><a href="#0a" data-toggle="tab">Component</a></li>
+					<li><a href="#1a" data-toggle="tab">Plugin</a></li>
+					<li><a href="#2a" data-toggle="tab">Component Version2</a></li>
+					<li><a href="#3a" data-toggle="tab">PatternTimeDistribution</a></li>
+					<li class="active"><a href="#4a" data-toggle="tab">Component</a></li>
+				</ul>
+
+				<div class="tab-content clearfix">
+					<!-- <div class="tab-pane active" id="0a"> -->
+					<div class="tab-pane " id="0a"></div>
+					<div class="tab-pane " id="1a"></div>
+					<div class="tab-pane " id="2a"></div>
+					<div class="tab-pane " id="3a">
+
+					
+<div class="form-group has-success">
+  <label class="col-form-label" for="inputSuccess1">Input with success</label>
+  <input type="text" class="form-control form-control-success" id="inputSuccess1">
+  <div class="form-control-feedback">Success! You've done it.</div>
+  <small class="form-text text-muted">Example help text that remains unchanged.</small>
+</div>
+<div class="form-group has-warning">
+  <label class="col-form-label" for="inputWarning1">Input with warning</label>
+  <input type="text" class="form-control form-control-warning" id="inputWarning1">
+  <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
+  <small class="form-text text-muted">Example help text that remains unchanged.</small>
+</div>
+<div class="form-group has-danger">
+  <label class="col-form-label" for="inputDanger1">Input with danger</label>
+  <input type="text" class="form-control form-control-danger" id="inputDanger1">
+  <div class="form-control-feedback">Shit, that username's taken. Try another?</div>
+  <small class="form-text text-muted">Example help text that remains unchanged.</small>
+</div>
+
+					</div>
+
+
+					<div class="tab-pane active" id="4a">
+						<div class="container col-md-12">
+							<div class="container">
+								<h3>Please choose a Component here</h3>  
+								<div class="dropdown">
+								    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Component
+								    <span class="caret"></span></button>
+								    <ul class="dropdown-menu" id="dropDownList">
+								    </ul>
+							  	</div>   
+							</div>
+							<hr>
+
+							<form id="newJStoHTML">
+
+							</form>
+
+						</div>
+						<button type="button" class="btn btn-primary" onclick=convertToJson()>Submit</button>
+						<button type="button" class="btn btn-default" onclick=expandAll('show')>Expand All</button>
+						<button type="button" class="btn btn-default" onclick=expandAll('hide')>Collapse All</button>
+						<div class="container col-md-12" id='configResult'>
+						</div>
+
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
